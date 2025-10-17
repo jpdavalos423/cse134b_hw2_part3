@@ -16,11 +16,14 @@
 
         <hr />
 
-        <form action="#">
-            <label for="search">Search within article:</label>
-            <input type="text" id="search" name="search" />
-            <button type="submit">Search</button>
-        </form>
+        <search>
+            <form action="#">
+                <label for="search">Search within article:</label>
+                <input type="text" id="search" name="search" />
+                <button type="submit">Search</button>
+            </form>
+        </search>
+
     </header>
     <main>
         <section class="abstract">
@@ -72,7 +75,7 @@
             </p>
         </section>
 
-        <section class="methods"> 
+        <section class="methods">
             <h2>2. Methods</h2>
             <h3>2.1 Quantum Coffee Preparation</h3>
             <h3>2.2 Experimental Design</h3>
@@ -81,10 +84,60 @@
         <section class="results">
             <h2>3. Results</h2>
             <h3>3.1 Productivity Metrics</h3>
+            <p>
+                Analysis revealed significant improvements across all measured
+                parameters:
+            </p>
+            <table>
+                <caption>
+                    Table 1: Productivity improvements by group
+                </caption>
+
+                <colgroup>
+                    <col style="width: 30%; text-align: left" />
+                    <col style="width: 17%; text-align: center;" />
+                    <col style="width: 17%; text-align: center" />
+                    <col style="width: 17%; text-align: center;" />
+                    <col style="width: 19%; text-align: center" />
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Control</th>
+                        <th>Quantum</th>
+                        <th>Placebo</th>
+                        <th><i>p</i>-value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Task Completion Rate (%)</td>
+                        <td>62.3 &plusmn; 5.1</td>
+                        <td>91.8 &plusmn; 3.2</td>
+                        <td>64.1 &plusmn; 4.8</td>
+                        <td>&lt; 0.001</td>
+                    </tr>
+                    <tr>
+                        <td>Error rate (%)</td>
+                        <td>8.7 &plusmn; 1.2</td>
+                        <td>2.1 &plusmn; 0.4</td>
+                        <td>8.3 &plusmn; 1.1</td>
+                        <td>&lt; 0.001</td>
+                    </tr>
+                    <tr>
+                        <td>Meeting Efficiency (units)</td>
+                        <td>3.2 &plusmn; 0.8</td>
+                        <td>8.9 &plusmn; 0.6</td>
+                        <td>3.4 &plusmn; 0.7</td>
+                        <td>&lt; 0.001</td>
+                    </tr>
+                </tbody>
+            </table>
             <h3>3.2 Temporal Analysis</h3>
         </section>
 
-        <section class="discussion"> 
+        <section class="discussion">
             <h2>4. Discussion</h2>
             <h3>Note on Safety</h3>
         </section>
@@ -98,18 +151,17 @@
             <h2>References</h2>
             <ol>
                 <li>
-                    Smith, J. "A Brief History of Caffeine Addiction." <i>Journal of Procrastination Studies</i>, vol. 42,
-                    2020,
-                    pp. 123-145.
+                    Smith, J. "A Brief History of Caffeine Addiction."
+                    <i>Journal of Procrastination Studies</i>, vol. 42, 2020, pp.
+                    123-145.
                 </li>
                 <li>
-                    Johnson, K., et al. "Quantum Superposition in Beverage Sciences." <i>Physical Review Coffee</i>, vol. 13,
-                    2024,
-                    pp. 456-478.
+                    Johnson, K., et al. "Quantum Superposition in Beverage Sciences."
+                    <i>Physical Review Coffee</i>, vol. 13, 2024, pp. 456-478.
                 </li>
                 <li>
-                    Chen, L. "Temporal Mechanics of Office Productivity." <i>Annals of Corporate Physics</i>, vol. 7, 2023, pp.
-                    89-101.
+                    Chen, L. "Temporal Mechanics of Office Productivity."
+                    <i>Annals of Corporate Physics</i>, vol. 7, 2023, pp. 89-101.
                 </li>
             </ol>
         </section>
@@ -132,7 +184,7 @@
                             </optgroup>
                         </select>
                     </div>
-                    <br>
+                    <br />
                     <div>
                         <label for="coolest-keyword">Coolest-sounding keyword:</label>
                         <input list="keywords" id="coolest-keyword" name="coolest-keyword"
@@ -145,16 +197,15 @@
                             <option value="Aurora"></option>
                         </datalist>
                     </div>
-                    <br>
+                    <br />
                     <button type="submit">Submit</button>
                 </fieldset>
             </form>
         </section>
 
-        <hr>
+        <hr />
 
-        <section class="contact"> </section>
-
+        <section class="contact"></section>
     </footer>
 </body>
 
